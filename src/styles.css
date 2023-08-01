@@ -1,1 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;500&display=swap');
+
+:root {
+  /* Colores */
+  --color-principal:#1C3247;
+  --color-secundario: #ffc107;
+  --color-terciario: #a1b823;
+  --color-fondo: #ffffff;
+
+  --color-textoPrincipal: #ffffff;
+  --color-textoSecundario: #000000;
+  --color-textoTerciario: #000000;
+  --color-textoFondo: #070707;
+}
+
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: var(--color-fondo) !important;
+    font-family: 'Urbanist', sans-serif !important;
+    overflow-x: hidden;
+}
+

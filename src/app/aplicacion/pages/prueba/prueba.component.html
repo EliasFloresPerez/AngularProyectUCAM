@@ -1,0 +1,44 @@
+
+<app-sidebar></app-sidebar>
+
+
+
+
+
+<div class="container_form">
+
+  <div class="alert alert-danger" [ngClass]="{'show': showAlert}" role="alert">
+    {{mensaje}}
+  </div>
+    <form class="form1" (submit)="onSubmit()" enctype="multipart/form-data">
+      <h2>Formulario</h2>
+  
+      <table>
+        <tr>
+          <th># Preguntas</th>
+          <td><input type="text" name="Preguntas" required /></td>
+        </tr>
+        <tr>
+          <th># Elecciones</th>
+          <td><input type="text" name="Elecciones" required /></td>
+        </tr>
+        <tr>
+          <th>Respuestas</th>
+          <td><input type="text" name="Respuestas" /></td>
+        </tr>
+        <tr>
+            
+            <td class="Imagen_td">
+              <label for="fileInput" id="Imagen-camara" class="Imagen-camara">
+                <i class="fas fa-camera"></i>
+              </label>
+              <input type="file" id="fileInput" name="Imagen" required style="display: none" (change)="onFileInputChange($event)" />
+            </td>
+        </tr>
+
+      </table>
+  
+      <input type="button" class="BotonFinal" value="Enviar" (click)="enviarConsulta()"/>
+    </form>
+  </div>
+  

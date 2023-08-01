@@ -1,0 +1,12 @@
+<app-sidebar></app-sidebar>
+
+
+<h1>Resultados</h1>
+<div class="container">
+    
+    <div *ngFor="let item of Lista; let lastItem = last" [ngClass]="{ 'item': true, 'AjustarLastChild': suprimirEfectos && lastItem }">
+        <p class="Texto">{{ item.Nombre }}</p>
+        <img class="scale-with-grid" [src]="item.ruta +  '?v=' + timestamp" alt = "Imagen" />
+    </div>
+    
+</div>

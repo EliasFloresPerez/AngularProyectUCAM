@@ -1,0 +1,149 @@
+
+.card-container {
+  perspective: 800px;
+  cursor: pointer;
+  height: 360px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  
+}
+
+.card-container.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-principal);
+  color: var(--color-textoPrincipal);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px 10px;
+  ;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-header,
+.card-text {
+  
+  text-align: center;
+  
+}
+
+.card-header{
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.card-text{
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+
+.container img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+.container{
+  width: 60%;
+}
+
+
+
+.animacion::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(45deg, 
+    #FF0018, /* Rojo */
+    #FFA52C, /* Naranja */
+    #FFFF41, /* Amarillo */
+    #008018, /* Verde */
+    #0000F9, /* Azul */
+    #86007D  /* Morado */
+  );
+  border-radius: 20px;
+  filter: blur(15px);
+  animation: animacion 5s linear infinite ;
+}
+
+
+
+@keyframes animacion {
+  0% {
+      background-position: 0 0;
+  }
+  50% {
+      background-position: 400% 0;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}
+
+
+@media screen and (max-width: 1250px) {
+  .container {
+    width: 100% !important;
+  }
+  
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  /* Tus estilos para el modo horizontal (teléfono volteado) aquí */
+  .container {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 40% !important;
+  }
+  
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  /* Tus estilos para el modo horizontal (teléfono volteado) aquí */
+  .container {
+    width: 40% !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 75%!important;
+    
+  }
+  
+}
+
+@media screen and (max-width: 450px) and (orientation: landscape) {
+  /* Tus estilos para el modo horizontal (teléfono volteado) aquí */
+  .container {
+    width: 40% !important;
+  }
+}
+

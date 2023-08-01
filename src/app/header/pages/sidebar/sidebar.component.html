@@ -1,0 +1,88 @@
+
+<header>
+
+  <div class="container-fluid">
+
+      <div class="navb-logo">
+          <img [src]="ImagenLogo" alt="Logo">
+      </div>
+
+      <div class="navb-items d-none d-xl-flex">
+
+        <div class="item">
+            <a href="/inicio">Inicio</a>
+        </div>
+
+        
+
+        <div class="item">
+            <a href="/acerca">Acerca de</a>
+        </div>
+
+        <div class="item">
+            <a href="/Admin/configuracion">Configuracion</a>
+        </div>
+
+        <div class="item-button">
+            <a href="/app" type="button">Probar!</a>
+        </div>
+    
+        <a class="item-button Temabutton " type="button" (click)="toggleTheme()">
+        <i [ngClass]="isNightMode ? 'fa-solid fa-moon' : 'fa-solid fa-sun'" [style.color]="isNightMode ? 'white' : 'black'"></i>
+        </a>
+        
+      </div>
+
+      <!-- Button trigger modal -->
+      <div class="mobile-toggler d-lg-none">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+            <i class="fa-solid fa-bars hamburguesa"></i>
+          </a>  
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+
+                  <div class="modal-header">
+                      <img [src]="LogoModal" alt="Logo">
+                    
+                      <div>
+                      <button type="button" class="btn-close"  (click)="toggleTheme()">
+                        <i [ngClass]="isNightMode ? 'fa-solid fa-moon' : 'fa-solid fa-sun'"></i>
+                      </button>
+
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                      </div>
+                  </div>
+
+                  <div class="modal-body">
+                      
+                      <div class="modal-line">
+                          <i class="fa-solid fa-house"></i><a href="/inicio">Inicio</a>
+                      </div>
+
+                      <div class="modal-line">
+                          <i class="fa-solid fa-file-lines"></i> <a href="/acerca">Acerca de</a>
+                      </div>
+                    
+                      <div class="modal-line">
+                        <i class="fa-solid fa-file-lines"></i> <a href="/Admin/configuracion">Configuracion</a>
+                    </div>
+                      
+
+                      <a href="/app" class="navb-button" type="button">Probar!</a>
+                  </div>
+
+                  <div class="mobile-modal-footer">
+                      
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</header>

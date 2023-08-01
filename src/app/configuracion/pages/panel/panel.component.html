@@ -1,0 +1,25 @@
+
+<app-sidebar></app-sidebar>
+
+
+<div class="page-container ">
+    <div class="centered-container">
+      <div class="color-box">
+        <span>Color Primario</span>
+        <input type="color" (input)="onColorChange($event, 'primario')" [value]="ColorPrimario" />
+      </div>
+  
+      <div class="color-box">
+        <span>Color Secundario</span>
+        <input type="color" (input)="onColorChange($event, 'secundario')" [value]="ColorSecundario"/>
+      </div>
+  
+      <div class="color-box">
+        <span>Color Terciario</span>
+        <input type="color" (input)="onColorChange($event, 'terciario')" [value]="ColorTerciario"/>
+      </div>
+  
+      <button class="send-button" (click)="onEnviarClick()">Enviar</button>
+    </div>
+</div>
+  

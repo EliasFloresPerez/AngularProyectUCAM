@@ -1,0 +1,86 @@
+.page-container {
+    
+    /* Estilos para centrar el contenedor en el body verticalmente */
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos al centro horizontalmente */
+    width: 35%; /* Ajusta el 70% del ancho deseado */
+    border: 2px solid var(--color-textoFondo);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+.color-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px; /* Ajustamos el margen entre los cuadros de colores */
+    width: 100%; /* El cuadro tendrá el mismo ancho que el contenedor principal */
+}
+
+.color-box input {
+    width: 100%; /* El cuadro de color ocupará todo el ancho del color-box */
+    height: 50px; /* Ajustamos el alto para reducir la altura del cuadro de color */
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.color-box span {
+    font-weight: bold;
+    text-align: left; /* Alinea el texto a la izquierda */
+    color: var(--color-textoFondo);
+}
+
+.color-preview {
+    width: 100%;
+    height: 80px; /* Ajusta la altura del cuadro de color */
+}
+
+.send-button {
+    margin-top: auto; /* El botón se posicionará al final del contenedor */
+    padding: 10px 20px;
+    background-color: var(--color-secundario);
+    color: var(--color-textoSecundario);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 30%;
+    transition: all .5s ease;
+    font-size: 1.0rem;
+    font-weight: bold;
+    /*letter-spacing: 1px;*/
+}
+
+
+
+.send-button:hover {
+    background-color: var(--color-terciario);
+    color: var(--color-textoTerciario);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 30%;
+  
+}
+
+@media screen and (max-width:  1250px) {
+  
+    .centered-container {
+        width: 70%;
+    }
+    .send-button { 
+      padding: auto;
+      width: 50%;
+  }
+}
+  

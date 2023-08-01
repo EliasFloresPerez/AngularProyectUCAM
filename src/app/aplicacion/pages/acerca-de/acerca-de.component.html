@@ -1,0 +1,30 @@
+
+<app-sidebar></app-sidebar>
+
+
+<div class="container mt-5" >
+    <div class="row">
+  
+      <!-- For de estudiantes -->
+      <div class="col-md-3 mb-4" *ngFor="let estudiante of estudiantes">
+        <div class="card-container "  #cardContainers [class.flipped]="estudiante.flipped" (click)="flipCard(estudiante)">
+          <div class="card-front">
+            <div class="card-header">{{ estudiante.Nombre }}</div>
+            <div class="card-body">
+              <img [src]="estudiante.Foto" class="card-img-top rounded-circle mb-3" alt="Foto del integrante">
+              <p class="card-text">{{ estudiante.Frase }}</p>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-header">Acerca de mi</div>
+            <div class="card-body">
+              <p>{{ estudiante.Mensaje }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  
