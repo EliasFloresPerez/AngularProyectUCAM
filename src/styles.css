@@ -6,12 +6,12 @@
   /* Colores */
   --color-principal:#1C3247;
   --color-secundario: #ffc107;
-  --color-terciario: #a1b823;
+  --color-terciario: #000000;
   --color-fondo: #ffffff;
 
   --color-textoPrincipal: #ffffff;
   --color-textoSecundario: #000000;
-  --color-textoTerciario: #000000;
+  --color-textoTerciario: #ffffff;
   --color-textoFondo: #070707;
 }
 
