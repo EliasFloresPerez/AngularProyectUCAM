@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Urbanist:wght@300;500&display=swap');
 
 :root {
   /* Colores */
@@ -20,4 +21,5 @@ body {
     font-family: 'Urbanist', sans-serif !important;
     overflow-x: hidden;
 }
+
 

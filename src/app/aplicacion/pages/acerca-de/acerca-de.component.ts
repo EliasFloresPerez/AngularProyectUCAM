@@ -17,7 +17,7 @@ export class AcercaDeComponent {
       Nombre: "Ing Luis Castillo",
       Foto: "../assets/Nosotros/inge.jpg",
       Mensaje: "I dont know what to say",
-      Frase: "" ,flipped: false 
+      Frase: "Tutor del proyecto" ,flipped: false 
     },
     {
       Nombre: "Elias Flores",
@@ -87,7 +87,7 @@ export class AcercaDeComponent {
     this.animarAleatorio();
     this.intervalId = setInterval(() => {
       this.animarAleatorio();
-    }, 5000); // 5000 milisegundos = 5 segundos
+    }, 7000); // 
   }
 
   detenerAnimacion() {
@@ -124,7 +124,7 @@ export class AcercaDeComponent {
         this.flipCard(this.estudiantes[index]);
         setTimeout(() => {
           randomCard.classList.remove('animacion');
-        },2900);
+        },4900);
       }, 2000); // Adjust the delay to match your animation duration
       
     });

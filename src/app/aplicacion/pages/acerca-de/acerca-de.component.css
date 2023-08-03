@@ -11,6 +11,7 @@
 
 .card-container.flipped {
   transform: rotateY(180deg);
+  
 }
 
 .card-front,
@@ -26,7 +27,7 @@
   text-align: center;
   padding: 10px;
   border-radius: 10px 10px;
-  ;
+  
 }
 
 .card-back {
@@ -37,7 +38,7 @@
 .card-text {
   
   text-align: center;
-  
+  font-weight: 450;
 }
 
 .card-header{
@@ -46,11 +47,12 @@
   margin-bottom: 10px;
 }
 
-.card-text{
-  font-family: "Times New Roman", serif;
-  font-style: italic;
-  letter-spacing: 1px;
+.card-text,
+.card-body {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 100;
+  font-size: 0.9rem;
+  font-weight: 450 !important;
 }
 
 
@@ -85,22 +87,7 @@
     #86007D  /* Morado */
   );
   border-radius: 20px;
-  filter: blur(15px);
-  animation: animacion 5s linear infinite ;
-}
-
-
-
-@keyframes animacion {
-  0% {
-      background-position: 0 0;
-  }
-  50% {
-      background-position: 400% 0;
-  }
-  100% {
-      background-position: 0 0;
-  }
+  filter: blur(10px);
 }
 
 
@@ -147,3 +134,10 @@
   }
 }
 
+h1 {
+  text-align: center;
+  color: var(--color-textoFondo);
+  margin: 20px 30px 20px 30px;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}

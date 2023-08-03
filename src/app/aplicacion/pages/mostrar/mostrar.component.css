@@ -3,14 +3,14 @@ h1 {
     color: var(--color-textoFondo);
     margin: 30px;
 }
+
 .container {
-    width: 80%;
-    height: auto;
-    background:  transparent;
-    margin: auto;
+    width: 100%;
+    background: transparent;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .item {
@@ -63,7 +63,27 @@ h1 {
 }
 
 
+@media screen and (max-width: 1250px) {
+  
+    .item:last-child { 
+        margin-left: 0px;
+    }
+    
+}
+
 .AjustarLastChild {
     margin-right: 0 !important;
     margin-left: 0 !important;
+}
+
+@media screen and (max-width: 765px) {
+  
+    .container { 
+        justify-content: center;
+    }
+    .item:last-child {
+        
+        margin-right: 0 !important;
+    }
+    
 }
