@@ -11,58 +11,59 @@ export class AcercaDeComponent {
   constructor() {
     this.cardContainers = new QueryList<ElementRef>();
   }
+  
 
   estudiantes = [
     {
       Nombre: "Ing Luis Castillo",
       Foto: "../assets/Nosotros/inge.jpg",
-      Mensaje: "I dont know what to say",
+      Mensaje: "Ingeniero en Electrónica, Telecomunicaciones y Redes, Máster en Seguridad Informática, Especialista en redes de Nueva Generación (NGN), Docente de la Universidad Estatal de Milagro",
       Frase: "Tutor del proyecto" ,flipped: false 
     },
     {
       Nombre: "Elias Flores",
       Foto: "../assets/Nosotros/Elias.jpg",
-      Mensaje: "I dont know what to say",
+      Mensaje: "Estudiante de TICS me gusta programar y caminar por las tardes",
       Frase: "La vida es un sueño :)" ,flipped: false 
     },
     {
       Nombre: "Nohely Bodniza",
       Foto: "../assets/Nosotros/Nohely.jpg",
-      Mensaje: "I dont know what to say",
-      Frase: "¿Ya es viernes ?", flipped: false
+      Mensaje: "Estudiante de tics que realiza mas de una actividad al tiempo, fiel creyente que todo lo que se inicia debe de tener un final",
+      Frase: "Nada con exceso, todo con medidas", flipped: false
     },
     
     {
       Nombre: "Jim Bastidas",
       Foto: "../assets/Nosotros/Jim.jpg",
-      Mensaje: "I dont know what to say",
+      Mensaje: "Estudiante de TICS me gusta la docencia y la reparacion de equipos de computo",
       Frase: "El éxito es la suma de pequeños esfuerzos repetidos día tras día.", flipped: false 
     },
     
     {
       Nombre: "Melanie Andrade",
       Foto: "../assets/Nosotros/Melanie.jpg",
-      Mensaje: "Soy una estudiante de Ing en Tics, me encanta darme cuenta que si quieres puedes, porque eres el unico que se pone obstaculos.",
+      Mensaje: "Soy una estudiante de  Tics, me encanta darme cuenta que si quieres puedes, porque eres el unico que se pone obstaculos.",
       Frase: "No importa tu contexto, siempre puedes salir adelante", flipped: false 
     },
 
     {
       Nombre: "Joel Adrian",
       Foto: "../assets/Nosotros/Joel.jpg",
-      Mensaje: "I dont know what to say",
-      Frase: "hmmm dejame recordar", flipped: false 
+      Mensaje: "Estudiante de TICS, curioso por conocer la programacion, me gusta los juegos y series con buena trama",
+      Frase: "Reiniciando problemas, cargando soluciones.", flipped: false 
     },
 
     {
       Nombre: "Joseph Guaspha",
       Foto: "../assets/Nosotros/Joseph.jpg",
-      Mensaje: "",
+      Mensaje: "Estudiante de Tics , mecanico de motos y autos, me gusta la musica y los videojuegos",
       Frase: "No te necesito aquí conmigo para amarte", flipped: false 
     },
     {
       Nombre: "Raul Garcia",
       Foto: "../assets/Nosotros/Raul.jpg",
-      Mensaje: "I dont know what to say",
+      Mensaje: "Estudiante de TICS me gusta programar en flutter , el cafe y las vacas",
       Frase: "Odio Flutter", flipped: false 
     }
   ];
